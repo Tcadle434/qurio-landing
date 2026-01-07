@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background colors */
+  --background: #0A0A0B;
+  --surface: #141416;
+  --surface-light: #1C1C1F;
+
+  /* Brand colors */
+  --primary: #2DD4BF;
+  --primary-dark: #14B8A6;
+  --secondary: #FBBF24;
+  --secondary-dark: #D97706;
+
+  /* Text colors */
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted: #6B6B73;
+
+  /* Status colors */
+  --positive: #2DD46C;
+  --negative: #D42D42;
+  --warning: #F59E0B;
+
+  /* Border colors */
+  --border: #27272A;
+  --border-light: #3F3F46;
 }
 
 @theme inline {
+  /* Background colors */
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-surface: var(--surface);
+  --color-surface-light: var(--surface-light);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Brand colors */
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+
+  /* Text colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Status colors */
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+
+  /* Border colors */
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+
+  /* Font */
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Custom utility classes */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow {
+  box-shadow: 0 0 60px rgba(45, 212, 191, 0.3);
+}
+
+.glow-sm {
+  box-shadow: 0 0 30px rgba(45, 212, 191, 0.2);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(45, 212, 191, 0.3);
+  color: var(--text-primary);
 }
