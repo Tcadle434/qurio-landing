@@ -104,7 +104,7 @@ function AISearchFeature() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-24 px-6 bg-surface/50">
+    <section ref={ref} className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -193,7 +193,7 @@ function InsightsFeature() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const insights = [
+  const insights: { icon: typeof AlertCircle; iconColor: string; iconBg: string; title: string; description: string; isAI: boolean }[] = [
     {
       icon: AlertCircle,
       iconColor: "text-warning",
@@ -221,7 +221,7 @@ function InsightsFeature() {
   ];
 
   return (
-    <section ref={ref} className="py-24 px-6">
+    <section ref={ref} className="py-24 px-6 bg-surface/50">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -290,9 +290,9 @@ function InsightsFeature() {
 export default function Features() {
   return (
     <>
-      <NetWorthFeature />
       <AISearchFeature />
       <InsightsFeature />
+      <NetWorthFeature />
     </>
   );
 }

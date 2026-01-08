@@ -48,9 +48,8 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { name: "Privacy Policy", href: "#" },
-  { name: "Terms of Service", href: "#" },
-  { name: "Support", href: "#" },
+  { name: "Privacy Policy", href: "https://skinny-shawl-6b7.notion.site/Qurio-Finance-Privacy-Policy-2e0e726bdb2380f28830f88fc77ef823" },
+  { name: "Terms of Service", href: "https://skinny-shawl-6b7.notion.site/Qurio-Finance-Terms-of-Service-2e0e726bdb238059a086fd3e851c9db3" },
 ];
 
 export default function Footer() {
@@ -75,6 +74,8 @@ export default function Footer() {
               <a
                 key={link.name}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-text-secondary hover:text-text-primary transition-colors text-sm"
               >
                 {link.name}

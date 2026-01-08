@@ -29,11 +29,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <Image
-            src="/images/logo-white.png"
+            src="/images/logo.png"
             alt="Qurio"
-            width={120}
-            height={40}
-            className="h-10 w-auto"
+            width={200}
+            height={66}
+            className="h-20 w-auto"
             priority
           />
         </a>
