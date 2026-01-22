@@ -15,19 +15,6 @@ function TikTokIcon({ className }: { className?: string }) {
   );
 }
 
-// X (Twitter) icon
-function XIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
-
 // Instagram icon
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -42,9 +29,8 @@ function InstagramIcon({ className }: { className?: string }) {
 }
 
 const socialLinks = [
-  { name: "X", href: "#", icon: XIcon },
-  { name: "Instagram", href: "#", icon: InstagramIcon },
-  { name: "TikTok", href: "#", icon: TikTokIcon },
+  { name: "Instagram", href: "https://www.instagram.com/qurio_finance?igsh=Y3hsbG4weHZ1eHJo", icon: InstagramIcon },
+  { name: "TikTok", href: "https://www.tiktok.com/@qurio96?_r=1&_t=ZP-93I1lGpclbj", icon: TikTokIcon },
 ];
 
 const footerLinks = [

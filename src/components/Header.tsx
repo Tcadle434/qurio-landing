@@ -39,7 +39,7 @@ export default function Header() {
         </a>
 
         <a
-          href="#"
+          href="https://apps.apple.com/app/id6757448478"
           className="inline-flex items-center gap-2 bg-text-primary text-background px-5 py-2.5 rounded-full font-medium text-sm hover:bg-text-secondary transition-colors"
         >
           <svg

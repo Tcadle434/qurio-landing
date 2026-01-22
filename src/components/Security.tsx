@@ -18,7 +18,7 @@ const securityFeatures = [
   },
   {
     icon: Server,
-    title: "Powered by Plaid",
+    title: "Powered by Plaid + SnapTrade",
     description: "The same technology trusted by Venmo, Robinhood, and millions of users.",
   },
   {

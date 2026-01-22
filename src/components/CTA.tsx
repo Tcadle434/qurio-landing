@@ -28,7 +28,7 @@ export default function CTA() {
           </p>
 
           <a
-            href="#"
+            href="https://apps.apple.com/app/id6757448478"
             className="inline-flex items-center gap-3 bg-text-primary text-background px-10 py-5 rounded-full font-semibold text-xl hover:bg-text-secondary transition-all hover:scale-105 glow"
           >
             <svg

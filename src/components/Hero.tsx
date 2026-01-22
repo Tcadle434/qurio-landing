@@ -5,11 +5,10 @@ import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 
 const exampleQueries = [
-  "How much did I spend on food last month?",
-  "What's my net worth?",
-  "Show me all my subscriptions",
-  "What did I spend at Target?",
+  "How much did I spend on food delivery in the last 45 days?",
   "How are my investments doing?",
+  "When's the last time I paid my internet bill?",
+  "How can I cut spending?",
 ];
 
 export default function Hero() {
@@ -100,7 +99,7 @@ export default function Hero() {
           className="mb-16"
         >
           <a
-            href="#"
+            href="https://apps.apple.com/app/id6757448478"
             className="inline-flex items-center gap-3 bg-text-primary text-background px-8 py-4 rounded-full font-semibold text-lg hover:bg-text-secondary transition-all hover:scale-105 glow-sm"
           >
             <svg
